@@ -34,8 +34,9 @@ input,
 textarea {
   font: inherit;
   border: none;
-  background: none;
+  background: none; 
 }
+
 
 ul {
   list-style: none;
@@ -79,6 +80,10 @@ header{
 }
 
 /* CLOSE button */
+.menu-toggle, .menu-close{
+  box-shadow: none;
+}
+
 .menu-close {
   position: absolute;
   top: 16px;
@@ -108,6 +113,84 @@ header{
   font-weight: 400;
 }
 
+/* Text size */
+h1{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* nav button style */
+
+.nav-btn{
+  background-color: #E3DFE2;
+  font-size: 20px;
+  height: 50px;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* subscription style */
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 340px;
+  
+}
+
+.email-input{
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.newsletter-form input {
+  flex: 1;
+  height:50px;
+  padding: 14px 16px;
+  margin-right: -5.5px;
+  font-size: 14px;
+  background:#FAFAFA;
+  border: none;
+  outline: none;
+  
+}
+
+.newsletter-form button {
+  padding: 8px 16px;
+  height: 50px;
+  font-size: 14px;
+  border: none;
+  background:#FAFAFA;
+  cursor: pointer;
+}
+
+.consent{
+  display: flex;
+  font-size: 10px;
+  gap: 10px;
+}
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  padding: 16px 18px;
+  gap: 25px;
+}
+
+.upper-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.upper-footer ul li{
+  margin-bottom: 10px;
+  text-align: right;
+}
+.bottom-footer{
+  font-size: 12px;
+  text-align: center;
+}
 @media (min-width: 768px) {
   .overlay-menu {
     width: 50vw;
