@@ -10,6 +10,7 @@ body, h1, h2, h3, p, ul {
   margin: 0;
 }
 
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   letter-spacing: 0.05em;
@@ -94,9 +95,28 @@ header{
   transform: translateX(-50%);
 }
 
+.header-left img{
+   transition: opacity 0.2s ease;
+};
+
+.header-left:hover img {
+  opacity: 0.6;
+}
+
 .header-right {
   margin-left: auto;
   font-size: 14px;
+}
+
+/* Text aligh - central */
+.center-h1{
+  margin: 30px 15px;
+  text-align: center;
+}
+
+.center-p{
+  margin: 25px 15px;
+  text-align: center;
 }
 
 /* Toggle Menu CSS */
@@ -146,24 +166,54 @@ header{
   font-size: 24px;
   font-weight: 400;
 }
+/* hero-video */
+.hero-video {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
 
 /* nav button style */
 
 .nav-btn{
   background-color: #E3DFE2;
-  font-size: 20px;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
   font-weight: 400;
   height: 50px;
    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+   align-content: center;
 }
 
+.nav-anchor{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.home-imgs-container{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.home-imgs-container img{
+   width: clamp(320px, 90vw, 420px);
+  height: auto;
+}
 /* subscription style */
+
 .newsletter-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: auto;
-  width: 340px;
+  width: 100vw;
 }
 
 .email-input{
@@ -193,9 +243,13 @@ header{
 
 .consent{
   display: flex;
+  justify-content: center;
+  margin: 15px 30px;
+  width: 320px;
   font-size: 10px;
   gap: 10px;
 }
+
 
 
 footer{
@@ -203,6 +257,7 @@ footer{
   flex-direction: column;
   background-color: #FAFAFA;
   padding: 16px 18px;
+  margin-top: 30px;
   gap: 25px;
 }
 
@@ -222,13 +277,22 @@ footer{
 /* Hidden Spots Page */
 .page-btns-container{
   display:flex;
+  width: 100vw;
   flex-direction: column;
+  align-items: center;
   gap:20px;
 }
 .page-btn{
   display: flex;
   flex-direction: row;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+   width: clamp(320px, 90vw, 420px);
+  height: clamp(120px, 28vw, 160px);
+
+}
+
+.page-btn-info{
+  margin: 5px;
 }
 
 .page-btn-img{
@@ -240,6 +304,17 @@ footer{
   text-align: right;
 }
 
+.curator-container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+.curator-container img{
+  width: clamp(320px, 90vw, 420px);
+  height: auto;
+}
 /* Place description */
 .article-header{
   position: relative;
@@ -298,6 +373,39 @@ Page btns small (in the article) */
   height: auto;
 }
 
+/* 404 page */
+.body-404{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-404{
+  flex: 1;
+}
+
+.h1-404{
+  margin: 30px 0px;
+  font-size: 96px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.h2-404{
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.p-404{
+  font-size: 21px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.color-404{
+  color: #DDE1E6;
+}
 
 @media (min-width: 768px) {
   .overlay-menu {

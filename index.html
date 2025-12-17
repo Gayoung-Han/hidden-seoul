@@ -9,7 +9,7 @@
 <body>
 <!-- header section starts -->
 <header>
-    <a href="./index.html" class="header-left"><img src="./assets/images/logo/logo.png" width="90px"> 
+    <a href="./index.html" class="header-left logo"><img src="./assets/images/logo/logo.png" width="90px"> 
     </a>
     <div class="header-right"> 
         <button class="menu-toggle" aria-expanded="false">
@@ -34,21 +34,30 @@
 <!-- header section ends -->
 
 <main>
-
-<h1>Welcome to Hidden Seoul</h1>
-<p>Curated by people who live here, this is a simple digital guide to places you might not notice at first.</p>
-<section class="main-imgs-container">
+<video
+  class="hero-video"
+  autoplay
+  muted
+  loop
+  playsinline
+>
+  <source src="./assets/images/logo/home-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h1 class="center-h1">Welcome to Hidden Seoul</h1>
+<p class="center-p">Curated by people who live here, this is a simple digital guide to places you might not notice at first.</p>
+<section class="home-imgs-container">
   <img src="./assets/images/photos/main-img1.png">
   <img src="./assets/images/photos/main-img2.png">
   <img src="./assets/images/photos/main-img3.png">
   <img src="./assets/images/photos/main-img4.png">
 </section>
 
-<a href="./pages/hidden-spots.html"><button class="nav-btn">Check All Hidden Spots</button></a>
+  <a href="./pages/hidden-spots.html" class="nav-anchor"><button class="nav-btn">Check All Hidden Spots</button></a>
 
 <section class="subscription-container">
-<h2>Stay Exploring</h2>
-<p>Join our free newsletter for curated Seoul finds.</p>
+<h2 class="center-h1">Stay Exploring</h2>
+<p class="center-p">Join our free newsletter for curated Seoul finds.</p>
 <form class="newsletter-form">
   <div class="email-input">
     <input
@@ -66,7 +75,7 @@
   
 
   <div class="consent">
-    <input type="checkbox" id="consent" name="consent" required>
+    <input type="checkbox" id="consent" name="consent" style="width: 14px; height: 14px;" required>
     <label for="consent">
       I agree to receive emails from this site and consent to the processing of my personal data in accordance with the
       <a href="#" target="_blank">Privacy Policy</a>.
