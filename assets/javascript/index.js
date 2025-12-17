@@ -16,3 +16,27 @@ const openBtn = document.querySelector('.menu-toggle');
 
   openBtn.addEventListener('click', openMenu);
   closeBtn.addEventListener('click', closeMenu);
+
+  //like button
+
+  const heartIcon = document.getElementById('heartIcon');
+const likeCount = document.getElementById('likeCount');
+
+let isLiked = false; 
+let count = Number(likeCount.textContent);      
+
+likeBtn.addEventListener('click', () => {
+  isLiked = !isLiked; 
+  
+  if (isLiked) {
+    count++;
+    heartIcon.src = "../assets/images/icons/liked-heart.png"; 
+    likeBtn.classList.add('active');
+  } else {
+    count--;
+    heartIcon.src = "../assets/images/icons/unliked-heart.png";  
+    likeBtn.classList.remove('active');
+  }
+  
+  likeCount.innerText = count;
+});

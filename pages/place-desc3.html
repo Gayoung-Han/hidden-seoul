@@ -24,18 +24,18 @@
   </button>
   <div class="menu-inner">
     <ul>
-<li><a href="../hidden-spots.html">Hidden Spots</a> <a href="../pages/hidden-spots.html"><img src="../assets/images/icons/menu-arrow.png" width="45px" alt="menu-arrow"></a></li>
+<li><a href="../pages/hidden-spots.html">Hidden Spots</a> <a href="../pages/hidden-spots.html"><img src="../assets/images/icons/menu-arrow.png" width="45px" alt="menu-arrow"></a></li>
       <li><a href="../pages/404-page.html">Local Curators</a> <a href="../pages/404-page.html"><img src="../assets/images/icons/menu-arrow.png" width="45px" alt="menu-arrow"></a></li>
       <li><a href="../pages/404-page.html">Subscription </a> <a href="../pages/404-page.html"><img src="../assets/images/icons/menu-arrow.png" width="45px" alt="menu-arrow"></a></li>    </ul>
   </div>
 </nav>
 
-<main>
+<main class="article-container">
 <section class="article-header">
   <img src="../assets/images/photos/place3-thumb.png">
   <div class="article-header-info article3-color">
     <p class="sub-text">Bar</p>
-    <h1>Jushindang</h1>
+    <h1>Zoosindang</h1>
     <p>If you’re looking to experience a Korean shrine atmostphere..</p>
     <div class="article-header-caption">
       <p class="caption-text">12.12.2025</p>
@@ -53,25 +53,31 @@
 <img src="../assets/images/photos/place3-desc4.png" alt="page1's description image4">
 <img src="../assets/images/photos/place3-desc5.png" alt="page1's description image5">
 <p>This is one of those places that doesn’t really need a description. It works better as an experience that small, specific, and easy to miss unless someone points you in the right direction.</p>
-<div>
-  Zodic Animal shit here
-</div>
 </section>
 
 <section class="article-info">
   <div class="article3-color">
-    <h3>Jushindang</h3>
+    <h3>Zoosindang</h3>
     <p>Address | Seoul Yongsan-gu</p>
     <p>Opening Hours</p>
-    <p>9:00 - 18:00 (Mon-Fri)</p>
-    <p>9:00 - 16:00 (Weekend)</p>
-    <p>Instagram | @thisaccount</p>
+    <p>18:00 - 02:00 (Mon-Fri)</p>
+    <p>17:00 - 02:00 (Weekend)</p>
+    <p>Instagram | @zoosindang</p>
 
   </div>
 </section>
 
-<section cass="article-social-media">
 
+<!-- social media -->
+<section class="article-social-media">
+<button class="like-button" id="likeBtn">
+    <img src="../assets/images/icons/unliked-heart.png" id="heartIcon" alt="like-icon">
+    <span id="likeCount">530</span>
+  </button>
+
+  <button class="share-button">
+    <img src="../assets/images/icons/share-icon.png" alt="share-icon">
+  </button>
 </section>
 
 <section class="article-curator-profile">
@@ -88,13 +94,14 @@
 </section>
 
 <section class="page-btns-small-container">
+  <h3>Around here</h3>
   <a href="../pages/place-desc1.html">
     <div class="page-small-btn">
       <img class="page-small-btn-img" src="../assets/images/photos/place1-thumb.png" alt="place1's thumbnail">
       <div class="page-small-btn-info">
        <p class="caption-text">Cafe</p>
        <p class="sub-text">Braed o.o.o.o</p>
-       <p class="caption-text">A place that feels straight out of Korea’s meme culture.</p>
+       <p class="caption-text">A place where the internet becomes edible</p>
        <p class="caption-text distance">1km from Iteawon</p>
       </div>
     </div>
@@ -106,20 +113,8 @@
       <div class="page-small-btn-info">
        <p class="caption-text">Bar</p>
        <p class="sub-text">Chuoekgongan</p>
-       <p class="caption-text">A place that feels straight out of Korea’s meme culture.</p>
+       <p class="caption-text">A personal collection, curated like a museum</p>
        <p class="caption-text distance">2km from Iteawon</p>
-      </div>
-    </div>
-  </a>
-
-  <a href="../pages/place-desc3.html">
-    <div class="page-small-btn">
-      <img class="page-small-btn-img" src="../assets/images/photos/place3-thumb.png" alt="place3's thumbnail">
-      <div class="page-small-btn-info">
-       <p class="caption-text">Bar</p>
-       <p class="sub-text">Jushindang</p>
-       <p class="caption-text">A place that feels straight out of Korea’s meme culture.</p>
-       <p class="caption-text distance">3km from Iteawon</p>
       </div>
     </div>
   </a>
@@ -130,7 +125,7 @@
       <div class="page-small-btn-info">
        <p class="caption-text">Park</p>
        <p class="sub-text">Hyochang park</p>
-       <p class="caption-text">A place that feels straight out of Korea’s meme culture.</p>
+       <p class="caption-text">Where the space feels absolutely like a 404 page</p>
        <p class="caption-text distance">4km from Iteawon</p>
       </div>
     </div>
@@ -139,8 +134,8 @@
 </section>
 
 <section class="subscription-container">
-<h2>Stay Exploring</h2>
-<p>Join our free newsletter for curated Seoul finds.</p>
+<h2 class="center-h1">Stay Exploring</h2>
+<p class="center-p">Join our free newsletter for curated Seoul finds.</p>
 <form class="newsletter-form">
   <div class="email-input">
     <input
